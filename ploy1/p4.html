@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form1</title>
+    <link rel="stylesheet" href="s.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form action="show.php" method="post">
+        <label for="prefix">คำนำหน้าชื่อ</label>
+        <select id="prefix" name="prefix" required>
+            <option value="นาย">นาย</option>
+            <option value="นาง">นาง</option>
+            <option value="นางสาว">นางสาว</option>
+        </select>
+
+        <label for="name">ชื่อ-นามสกุล</label>
+        <input type="text" id="name" name="name" required>
+
+        <label>เพศ</label>
+        <div class="gender-options">
+            <label for="male">
+                <input type="radio" id="male" name="gender" value="male" required> ชาย
+            </label>
+            <label for="female">
+                <input type="radio" id="female" name="gender" value="female" required> หญิง
+            </label>
+        </div>
+
+        <label>ในวันหนึ่งคุณใช้อุปกรณ์ใดมากที่สุด</label>
+        <div class="device-options">
+            <label for="pc">
+                <input type="checkbox" id="pc" name="device[]" value="PC"> PC
+            </label>
+            <label for="notebook">
+                <input type="checkbox" id="notebook" name="device[]" value="Notebook"> NoteBook
+            </label>
+            <label for="netbook">
+                <input type="checkbox" id="netbook" name="device[]" value="Netbook"> NetBook
+            </label>
+            <label for="tablet">
+                <input type="checkbox" id="tablet" name="device[]" value="Tablet"> Tablet
+            </label>
+            <label for="smartphone">
+                <input type="checkbox" id="smartphone" name="device[]" value="Smartphone"> SmartPhone
+            </label>
+        </div>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="confirm_password">Confirm Password</label>
+        <input type="password" id="confirm_password" name="confirm_password" required>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>

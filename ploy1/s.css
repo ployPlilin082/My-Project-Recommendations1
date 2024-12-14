@@ -1,0 +1,81 @@
+body {
+    font-family: 'Prompt', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+form {
+    background-color: #fff;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.gender-options,
+.device-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.gender-options {
+    background-color: #e6f7ff; /* สีพื้นหลังสำหรับเน้น */
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #b3d9ff; /* สีกรอบสำหรับเน้น */
+}
+
+.device-options {
+    background-color: #e6ffcc; /* สีพื้นหลังสำหรับเน้น */
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #b3ff99; /* สีกรอบสำหรับเน้น */
+}
+
+input[type="submit"],
+input[type="reset"] {
+  background-color: #20a4e0;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+input[type="reset"] {
+  background-color: #418ecc;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  opacity: 0.8;
+}
